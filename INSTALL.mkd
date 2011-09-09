@@ -1,0 +1,25 @@
+## Installation
+
+**For ArchLinux users**
+
+* You can install plugin from [AUR](http://aur.archlinux.org). If you have installed `yaourt` tool, ran `yaourt -S vim-task-org`.
+
+* You can install plugin with `PKGBUILD` in my repo, clone it and goto [archlinux/](https://github.com/iflo0/vim-task-org/tree/master/archlinux) dir,
+  ran `makepkg -si`.
+
+**For other Linux and Mac**
+
+* Clone repo or download archived sources.
+
+* Vim-task-org is bundled with an installer script, just ran: `sh install.sh`.
+
+* You can install plugin manually, just copy [plugin/vto.vim](https://github.com/iflo0/vim-task-org/tree/master/plugin/vto.vim) 
+  into `$HOME/.vim/plugin/`, and [doc/vto.txt](https://github.com/iflo0/vim-task-org/tree/master/doc/vto.txt) into `$HOME/.vim/doc`.
+
+* After manual installation do it from Vim: `:helptags $HOME/.vim/doc`.
+
+**For Windows** 
+
+* Copy `vto.vim` into `~\vimfiles\plugin`.
+
+`09.09.11 16:52:05, use.skills@gmail.com`

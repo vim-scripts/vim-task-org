@@ -1,13 +1,6 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=3652
 
-## vim-task-org
-
-  Vim-task-org is a plugin for Vim to manipulate `TODO, FIXME` (and more) marks in your sources.
-
-## Documentation
-
-  See "http://github.com/iflo0/vim-task-org/blob/master/doc/vto.txt&quot; 
-  If you install vim-task-org, please run `:helptags {plugdir}/doc` to be able to view the documentation from within vim. 
+Vim-task-org is a plugin for Vim to manipulate `TODO, FIXME` (and more) marks in your sources.
 
 ## Dependencies
   

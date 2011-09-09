@@ -1,0 +1,98 @@
+*vto.vim* Plugin for manipulate TODO/FIXME/etc marks (tasks) in your sources.
+
+ 			*vto*   *tasks*   *marks* *vim-task-org*
+==============================================================================
+  Overview~
+ 
+vim-task-org is a plugin for inserting/reading special 'task-marks' from your sources. 
+
+Project page: |https://github.com/iflo0/vim-task-org|.
+
+For bugs/issues : |https://github.com/iflo0/vim-task-org/issues|
+
+Email: |use.skills@gmail.com|
+
+==============================================================================
+  Commands~
+ 
+I recommend you bind all commands to keys. For example:
+|~/.vimrc:|
+>
+        map <F6> :Vt<CR>
+<
+
+Insert the current date:
+>
+        :Di
+<
+
+Insert task/any mark in your:
+>
+        :Ti
+<
+After, you must enter the task and message. First word - task type (or any mark), other words - message:
+>
+        :Ti<CR>
+        Type taskname & task (TODO test it): MYMARK test test test<CR>
+        
+        output:
+        ":MYMARK: 04.07.11 13:30:05, iflo0
+        " test test test
+<
+
+View/hide window with all tasks from current file (buffer):
+>
+        :Vt
+<
+
+Jump to selected task:
+>
+        :Jt
+<
+
+==============================================================================
+  Options~
+ 
+All of these options can be customized using the following syntax in your .vimrc :
+>
+        let g:vtoAuthorName = 'Alexander'
+<
+
+
+    |'g:vtoDateFormat'|
+    The format used by |:Di| and |:Ti| commands.
+    For help see 'ruby' documentation: http://www.ruby-doc.org/core/classes/Time.html#M000392 
+    By default - "%d.%m.%y %T"
+    
+    |'g:vtoAuthorName'|
+    Name of the author of task. Used by |:Ti| command.
+    By default - system current username.
+    
+    |'g:vtoCommDictNew'|
+    Users dictionary of comments. Plugin scan filetype and 
+    insert task in which the first symbol - commentary symbol.
+    Plugin know 'ruby', 'python', 'cpp', 'sh' and 'vim' filetypes. 
+    If you write programs, for example, in 'lua', you must add in |.vimrc|
+    
+>
+        let g:vtoCommDictNew = {'lua':'--'}
+<
+
+    
+    |'g:vtoDefaultComm'|
+    If filetype not recognized, by default in your inserted task
+    first symbol be a '#'. If you want change it - add it in |.vimrc|.
+    
+    |'g:vtoTokenList'|
+    List of known tokens. When you call ':Vt', plugin scan buffer 
+    with this array and display in new window found tasks with this tokens.
+    By default:
+
+>
+        let g:vtoTokenList = [":BUG:", ":FIXME:", ":TODO:", ":TRICKY:", ":WARNING:", "TODO", "FIXME"]
+<
+
+==============================================================================
+Sorry for my bad english, guys.
+
+|04.07.11_14.03.23|,  |use.skills@gmail.com|

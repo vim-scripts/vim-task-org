@@ -1,0 +1,23 @@
+# TODO:
+
+* Global scan for all marks in project.
+
+# ChangeLog:
+
+## 0.3.1
+
+* First released version.
+
+* Written basic functionality.
+
+* Added documentation, installation script.
+
+* Added archlinux-files.
+
+## 0.4.0
+
+* Compatible with *ruby-1.8* (special for Mac users).
+
+* Some bugfixes.
+
+`09.09.11 16:48:01, use.skills@gmail.com`
